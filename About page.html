@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="My Website.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <title>About Us</title>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/LOGO.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About page.html">ABOUT</a></li>
+                    <li><a href="recipes.html">RECIPES</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>   
+       <h1><span>About</span> Us</h1>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>World Class Dishes</h1>
+                <p>Fusco’s kitchen is , light and dynamic. <br> Our mission is to create meals that involve all our senses - reinstate, provocation and refine.  "Dynamic means force and stands for force that stimulates change or progress within a system or process.  These forces are not visible, but their biologic "footprints" are.  The effects can be seen if one learns to observe and understand the connections between the formative forces and the physical matter of all organisms".</p>
+                <a href="recipes.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="images/ABOUT US img.jpg"  alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h1>Stay In The Loop</h1>
+         <h2>Get the latest when you sign up for our newsletter.</h2>
+            <div class="form">
+                <form>
+                    <input type="email" required="required" placeholder="Enter Your Email">
+                    <button type="submit" class="button1"> <span>Sign Up</span></button>
+                </form>
+            </div>
+        
+        <div class="icons">
+            <a href="mailto:tech.fusco@gmail.com"><i class="fa fa-envelope-o"></i></i></a>
+            <a href="https://facebook.com/godwin.okechukwu"><i class="fa fa-facebook"></i></a>
+            <a href="https://instagram.com/fusco_josh"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/officialfusco"><i class="fa fa-twitter"></i></a>
+            <a href="https://wa.me/message/BNVSG2SIXD6SP1"><i class="fa fa-whatsapp"></i></a>
+        </div>
+       <hr class="horizon" color="#f44336" width="15%">
+    </section>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+        navLinks.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
